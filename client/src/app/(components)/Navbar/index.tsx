@@ -4,6 +4,7 @@ import FlexBetween from "../FlexBetween";
 import { Box, Typography } from "@mui/material";
 import Image from "next/image";
 import { QueryStats } from "@mui/icons-material";
+import NavLink from "../NavLink";
 
 const Navbar = () => {
   return (
@@ -26,53 +27,14 @@ const Navbar = () => {
           />
         </Box>
         <Box>
-          <Typography
-            fontWeight={500}
-            fontSize="16px"
-            color="#238D95"
-            lineHeight={1.5}
-            sx={{
-              "&:hover": {
-                cursor: "pointer",
-                color: "#238D95",
-              },
-            }}
-          >
-            Session Guides
-          </Typography>
+          <NavLink href="/" label="Session Guides" />
         </Box>
         <Box>
-          <Typography
-            fontWeight={500}
-            fontSize="16px"
-            color="#3F3F3F"
-            lineHeight={1.5}
-            sx={{
-              "&:hover": {
-                cursor: "pointer",
-                color: "#238D95",
-              },
-            }}
-          >
-            Support Channels
-          </Typography>
+          <NavLink href="/support" label="Support Channels" />
         </Box>
         <FlexBetween gap={1}>
           <Box>
-            <Typography
-              fontWeight={500}
-              fontSize="16px"
-              color="#3F3F3F"
-              lineHeight={1.5}
-              sx={{
-                "&:hover": {
-                  cursor: "pointer",
-                  color: "#238D95",
-                },
-              }}
-            >
-              Announcements
-            </Typography>
+            <NavLink href="/announcements" label="Announcements" />
           </Box>
           <Box
             sx={{
